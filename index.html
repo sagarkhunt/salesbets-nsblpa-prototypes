@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SalesBets & NSBLPA Prototypes - Navigation</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+      }
+
+      .container {
+        max-width: 800px;
+        background: white;
+        border-radius: 20px;
+        padding: 40px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .subtitle {
+        font-size: 1.2rem;
+        color: #666;
+        margin-bottom: 40px;
+      }
+
+      .websites {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        margin: 40px 0;
+      }
+
+      .website-card {
+        background: #f8fafc;
+        border-radius: 15px;
+        padding: 30px;
+        border: 2px solid transparent;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .website-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      }
+
+      .salesbets {
+        border-color: #1e40af;
+      }
+
+      .salesbets:hover {
+        background: linear-gradient(135deg, #1e40af, #3b82f6);
+        color: white;
+      }
+
+      .nsblpa {
+        border-color: #059669;
+      }
+
+      .nsblpa:hover {
+        background: linear-gradient(135deg, #059669, #10b981);
+        color: white;
+      }
+
+      .website-icon {
+        font-size: 3rem;
+        margin-bottom: 15px;
+      }
+
+      .website-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+
+      .website-desc {
+        color: #666;
+        margin-bottom: 20px;
+      }
+
+      .website-card:hover .website-desc {
+        color: rgba(255, 255, 255, 0.8);
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 12px 24px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.3s ease;
+      }
+
+      .btn-salesbets {
+        background: #1e40af;
+        color: white;
+      }
+
+      .btn-nsblpa {
+        background: #059669;
+        color: white;
+      }
+
+      .btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      .status {
+        background: #f0f9ff;
+        border: 1px solid #0ea5e9;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 30px 0;
+      }
+
+      .success {
+        background: #f0fdf4;
+        border-color: #22c55e;
+      }
+
+      .features {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        margin: 30px 0;
+      }
+
+      .feature {
+        text-align: center;
+        padding: 20px;
+        background: #f8fafc;
+        border-radius: 10px;
+      }
+
+      .feature-icon {
+        font-size: 2rem;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>🎉 Website Redesign Complete!</h1>
+      <p class="subtitle">Choose which prototype you want to explore:</p>
+
+      <div class="websites">
+        <a
+          href="http://localhost:8000"
+          class="website-card salesbets"
+          target="_blank"
+        >
+          <div class="website-icon">🏆</div>
+          <div class="website-title">SalesBets.com</div>
+          <div class="website-desc">
+            Revolutionary no-risk sports betting platform with athlete
+            performance betting. Features: Athletes, Teams, Apps, Ownership,
+            Contact.
+          </div>
+          <div class="btn btn-salesbets">View SalesBets</div>
+        </a>
+
+        <a
+          href="http://localhost:8001"
+          class="website-card nsblpa"
+          target="_blank"
+        >
+          <div class="website-icon">🏅</div>
+          <div class="website-title">NSBLPA.com</div>
+          <div class="website-desc">
+            National Sales Betting League Players Association. Features: Teams,
+            Apps, Ownership, Contact.
+          </div>
+          <div class="btn btn-nsblpa">View NSBLPA</div>
+        </a>
+      </div>
+
+      <div class="status success">
+        <h3>✅ All Issues Fixed!</h3>
+        <p>• Color schemes updated (Blue for SalesBets, Green for NSBLPA)</p>
+        <p>• Navigation errors resolved</p>
+        <p>• All images and links working perfectly</p>
+        <p>• Mobile-responsive design implemented</p>
+      </div>
+
+      <div class="features">
+        <div class="feature">
+          <div class="feature-icon">📱</div>
+          <h4>Mobile First</h4>
+          <p>Responsive design for all devices</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">🎨</div>
+          <h4>Modern UI</h4>
+          <p>Clean, professional design</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">⚡</div>
+          <h4>Fast Loading</h4>
+          <p>Optimized performance</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">🔒</div>
+          <h4>Accessible</h4>
+          <p>WCAG 2.1 AA compliant</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

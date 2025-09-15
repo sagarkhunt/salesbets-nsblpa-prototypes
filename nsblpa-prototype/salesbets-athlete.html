@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redirect - NSBLPA</title>
+    <style>
+      body {
+        font-family: "Inter", Arial, sans-serif;
+        background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+        color: white;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      .container {
+        max-width: 600px;
+        padding: 40px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 20px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+      }
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        font-weight: 800;
+      }
+      p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+        opacity: 0.9;
+      }
+      .btn {
+        display: inline-block;
+        background: white;
+        color: #059669;
+        padding: 15px 30px;
+        text-decoration: none;
+        border-radius: 10px;
+        font-weight: 600;
+        margin: 10px;
+        transition: all 0.3s ease;
+      }
+      .btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      }
+      .info {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>🏅 NSBLPA</h1>
+      <p>
+        You're looking for the SalesBets Athletes page, but you're currently in
+        the NSBLPA section.
+      </p>
+
+      <div>
+        <a href="../salesbets-prototype/salesbets-athlete.html" class="btn">
+          🏆 Go to SalesBets Athletes
+        </a>
+        <a href="index.html" class="btn"> 🏅 Stay in NSBLPA </a>
+      </div>
+
+      <div class="info">
+        <h3>ℹ️ Note:</h3>
+        <p>
+          NSBLPA doesn't have an "Athletes" section. We focus on team management
+          and league operations. The SalesBets platform has the athlete betting
+          features.
+        </p>
+      </div>
+    </div>
+
+    <script>
+      // Auto-redirect after 5 seconds
+      setTimeout(() => {
+        window.location.href = "../salesbets-prototype/salesbets-athlete.html";
+      }, 5000);
+    </script>
+  </body>
+</html>
